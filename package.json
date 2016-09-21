@@ -1,0 +1,19 @@
+{
+  "name": "simsl",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^1.6.0",
+    "jsonwebtoken": "^7.1.9",
+    "md5": "^2.2.1",
+    "random-words": "0.0.1",
+    "request": "^2.74.0"
+  }
+}

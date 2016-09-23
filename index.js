@@ -6,7 +6,8 @@ var readline = require('readline'),
 	request = require('request'),
 	chokidar = require('chokidar'),
 	randomWords = require('random-words'),
-	http = require('http');
+	http = require('http'),
+	util = require('util');
 
 //default options
 var options = {
@@ -127,7 +128,7 @@ function emulateSLRequest(){
 	}
 	
 	console.log('Sending the following data:');
-	console.log(data);
+	console.log(util.inspect(data, {showHidden: false, depth: null}));
 	
 	request.post(options.webhook, {form: data}, function(err, response, body){
 		if (err) console.log('Error sending request to ' + options['webhook']  + ' : ' + err.code);

@@ -190,7 +190,7 @@ function generateTagValue(type){
 if (options['echo']){
 	var server = http.createServer(function(req, resp){
 		console.log('Received ' + req.method + ' request ' + ' on ' + req.url);
-		rest.statusCode = 200;
+		resp.statusCode = 200;
 		resp.end();
 		rl.prompt();
 	});

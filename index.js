@@ -169,7 +169,7 @@ function generateTagValue(type){
 			case 'file':
 				value = {
 					name: randomWords(),
-					thubmnail: 'http://placehold.it/400x400',
+					thumbnail: 'http://placehold.it/400x400',
 					urls: ['http://placehold.it/400x400']
 				};
 				break;
